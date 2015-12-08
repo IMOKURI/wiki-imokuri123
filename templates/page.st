@@ -16,10 +16,14 @@
     <link href="$base$/css/print.css" rel="stylesheet" media="print" type= "text/css" />
     $endif$
     <!--[if IE]><link href="$base$/css/ie.css" rel="stylesheet" media="screen, projection" type="text/css" /><![endif]-->
-    $if(shogi)$
+    $if(kif)$
     <link rel="stylesheet" type="text/css" href="$base$/css/kifuforjs.css" />
     <script src="$base$/js/jquery.min.js"></script>
     <script src="$base$/js/kifuforjs.js" charset="utf-8"></script>
+    <script>
+      var Kifu = require("Kifu");
+      Kifu.settings={ImageDirectoryPath: "$base$/img/shogi"};
+    </script>
     $endif$
     <link rel="shortcut icon" href="$base$/img/favicon.ico">
   </head>
@@ -30,6 +34,9 @@
             $userbox()$
             $tabs$ 
             $content()$
+            $if(kif)$
+              <script>Kifu.load("$kif$");</script>
+            $endif$
             $footer()$
           </div>
         </div>
