@@ -8,7 +8,7 @@
     <link href="$base$/_feed/" type="application/atom+xml" rel="alternate" title="$wikititle$" />
     <link href="$base$/_feed$pageUrl$" type="application/atom+xml" rel="alternate" title="$wikititle$ - $pagetitle$" />
     $endif$
-    <title>$wikititle$ - $pagetitle$</title>
+    <title>$pagetitle$ - $wikititle$</title>
     $if(printable)$
     <link href="$base$/css/print.css" rel="stylesheet" media="all" type= "text/css" />
     $else$
