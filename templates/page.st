@@ -34,9 +34,6 @@
             $userbox()$
             $tabs$ 
             $content()$
-            $if(kif)$
-            <script>Kifu.load("$kif$");</script>
-            $endif$
             $footer()$
           </div>
         </div>
