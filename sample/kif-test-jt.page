@@ -1,7 +1,8 @@
 ---
 title: 棋譜表示のテスト
+format: Markdown
 kif: /kif/jt201409130101.kif
----
+...
 
-JT杯の棋譜表示テスト
+### JT杯の棋譜表示テスト
 
